@@ -21,8 +21,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: |
-            ${DOCKER_HUB_BASE_NAME}
+          images: yteraoka/diagrams
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
